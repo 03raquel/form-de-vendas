@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda seu produto</title>
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="header"></div>
+
+        <div class="form-container">
+            <div class="form-header">
+                <p>Formulário</p>
+            </div>
+
+            <div class="form-body">
+                <h1 class="form-title">Venda fácil seu produto!</h1>
+                <p>Descreva as características e marque as opcionais que ele possui.</p>
+                <form>
+                    <div class="box-input">
+                        <label for="title">Título do anúncio<span class="required-field">*</span></label>
+                        <input type="text" name="title" id="title" class="block" placeholder="Um título para anunciar o seu produto" minlength="1" maxlength="30" required />
+                    </div>
+
+                    <div class="box-input">
+                        <label for="price">Preço<span class="required-field">*</span></label>
+                        <input type="number" name="price" id="price" class="block" placeholder="Defina o preço" required />
+                    </div>
+
+                    <div class="box-input">
+                        <label for="description">Descrição<span class="required-field">*</span></label>
+                        <textarea name="description" id="description" class="block" placeholder="Aqui você coloca os detalhes do produto, por exemplo, se ele tem algum defeito"></textarea>
+                    </div>
+
+                    <div class="box-input">
+                        <label for="category">Categoria<span class="required-field">*</span></label>
+                        <select id="categoria" name="categoria">
+                            <option value="">Selecione...</option>
+                            <option value="eletronicos">Eletrônicos</option>
+                            <option value="roupas">Roupas</option>
+                            <option value="moveis">Móveis</option>
+                            <option value="outros">Outros</option>
+                        </select>
+                    </div>
+
+                    <div class="box-input">
+                        <label for="condition">Condição<span class="required-field">*</span></label>
+                        <input type="radio" id="novo" name="condicao" value="novo"><label for="novo">Novo</label>
+                        <input type="radio" id="usado" name="condicao" value="usado"><label for="usado">Usado</label>
+                    </div>
+
+                    <div class="box-input">
+                        <label for="brand">Marca<span class="required-field">*</span></label>
+                        <input type="text" name="brand" id="brand" class="block" placeholder="Digite a marca do seu produto" required />
+                    </div>
+
+                    <div class="box-input">
+                        <label for="model">Modelo<span class="required-field">*</span></label>
+                        <input type="text" name="model" id="model" class="block" placeholder="Digite o modelo do seu produto" required />
+                    </div>
+
+                    <div class="box-input">
+                        <label for="purchase_date">Data de compra<span class="required-field">*</span></label>
+                        <input type="date" name="purchase_date" id="purchase_date" class="block" required />
+                    </div>
+
+                    <div class="box-input">
+                        <label for="images">Fotos do produto:<span class="required-field">*</span></label>
+                        <input type="file" multiple accept="image/png, image/jpg" id="images" name="images" class="block" required />
+                    </div>
+
+                    <input type="submit" value="Enviar" class="btn-submit"/>
+                </form>
+            </div>
+        </div>
+
+        <h1 class="products-title">Produtos Cadastrados</h1>
+
+        <div class="products-container">
+            <div class="product-card">
+                <img src="img/produto1.jpg" alt="Produto 1">
+                <h2>Notebook Dell</h2>
+                <p>R$ 2.500,00</p>
+                <p>Usado, em ótimo estado</p>
+            </div>
+            <div class="product-card">
+                <img src="img/produto2.jpg" alt="Produto 2">
+                <h2>Smartphone Samsung</h2>
+                <p>R$ 1.200,00</p>
+                <p>Novo, com garantia</p>
+            </div>
+            <div class="product-card">
+                <img src="img/produto3.jpg" alt="Produto 3">
+                <h2>Saga Harry Potter</h2>
+                <p>R$ 199,99</p>
+                <p>Novo</p>
+            </div>
+            <div class="product-card">
+                <img src="img/produto4.jpg" alt="Produto 4">
+                <h2>Sandália Birken</h2>
+                <p>R$ 46,99</p>
+                <p>Usada, em bom estado</p>
+            </div>
+            <div class="product-card">
+                <img src="img/produto5.jpg" alt="Produto 5">
+                <h2>Cama Box Casal</h2>
+                <p>R$ 664,91</p>
+                <p>Novo</p>
+            </div>
+            <div class="product-card">
+                <img src="img/produto6.jpg" alt="Produto 6">
+                <h2>Mochila Nike</h2>
+                <p>R$ 267,49</p>
+                <p>Seminova</p>
+            </div>
+        </div>
+    </div> <footer class="site-footer">
+        <div class="footer-container">
+            <ul class="footer-links">
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Ajuda / FAQ</a></li>
+                <li><a href="#">Termos de Uso</a></li>
+            </ul>
+            <p class="footer-copyright">&copy; 2025 Seu Site. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #0d0a11;
+    margin-bottom: 50px; 
+}
+
+form {
+    max-width: 450px;   
+    margin: 0 auto;     
+    padding: 20px;      
+}
+
+.header {
+    height: 250px;
+    background-image: url("../img/banner-topo.jpg");
+    background-size: cover;  
+    background-position: center; 
+    background-repeat: no-repeat; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container {
+    background-color: #fdfdfd;
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto; 
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    position: relative; 
+    top: -62px;         
+}
+
+.form-header {
+    border-bottom: 1px solid #DFDFDF;
+    height: 45px;
+}
+
+.form-header p {
+    color: #673ab7;
+    border-bottom: 2px solid #673ab7;
+    width: 100px;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    height: 45px;
+    line-height: 45px;
+}
+
+.form-body {
+    padding: 30px 0;
+}
+
+.form-title {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.form-body p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.required-field {
+    color: #d80835;
+}
+
+.box-input {
+    margin-bottom: 25px;
+}
+
+.box-input textarea {
+    margin-top: 10px;
+}
+
+.block {
+    display: block;
+}
+
+.box-input p {
+    margin-bottom: 15px;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+input[type="text"], 
+input[type="number"],
+input[type="date"],
+input[type="file"],
+textarea,
+select { 
+    width: 100%;
+    max-width: 400px;
+}
+
+textarea {
+    padding: 10px 5px;
+}
+
+.btn-submit {
+    display: inline-block;
+    background-color: #673ab7; 
+    color: #fff;
+    border: 2px solid transparent;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+   
+}
+
+.btn-submit:hover {
+    background-color: #fff;
+    color: #673ab7;
+    border-color: #673ab7;
+}
+
+#success-message.show {
+    display: block;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.products-title {
+    color: #fff;
+    text-align: center;
+    margin-top: 60px; 
+    margin-bottom: 40px; 
+}
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    max-width: 900px;
+    margin: 0 auto 50px auto; 
+    padding: 0 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.product-card h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #853939;
+}
+
+.product-card p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.product-card {
+    transition: transform 0.3s ease-in-out, 
+    box-shadow 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    transform: translateY(-8px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer; 
+}
+
+.site-footer {
+    border-top: 1px solid #444; 
+    padding: 40px 20px;
+    color: #ccc;
+    text-align: center;
+    margin-top: 60px; 
+}
+
+.footer-container {
+    max-width: 900px; 
+    margin: 0 auto;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0; 
+    display: flex;
+    justify-content: center;
+    gap: 25px; 
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-copyright {
+    font-size: 0.9em;
+    color: #888;
+}
